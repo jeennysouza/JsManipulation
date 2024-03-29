@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css/style.css">
+    <meta name="aurhor" content="jenifer clemnte">
+    <script defer src="./script/script.js"></script>
+    <title> User Cadastro </title>
+</head>
+
+<body>
+    <main>
+        <section class="flex-items">
+            <figure>
+                <img src="assets/icons/undraw_fill_form_re_cwyf (1).svg" alt="Icones de pessoas meramente ilustrativas">
+            </figure>
+
+            <form  class="form"  onsubmit="enviarDados(event)">
+
+                <div class="form-style">
+                    <label for="name">
+                        informe o primeiro nome:
+                    </label>
+                    <input type="text" id="name" placeholder="Ex:Jenifer Clemente">
+                </div>
+                <!-- /////////////////////////////////////////////////////////////////////////////////// -->
+                <div class="form-style">
+                    <label for="email">
+                        informe seu email:
+                    </label>
+                    <input type="email" id="email" placeholder="Ex:email@gmail.com ">
+                </div>
+                <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+                <div class="form-style">
+                    <label for="age">
+                        informe a idade:
+                    </label>
+                    <input type="number" id="age" placeholder="Ex:21">
+                </div>
+                <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+                <div class="buttons">
+                    <button type="submite">
+                        cadastrar
+                    </button>
+
+                    <button  class="cancelar"  type="reset">
+                        Cancelar
+                    </button>
+                </div>
+            </form>
+
+
+        </section>
+
+        <section>
+            <table>
+                <thead>
+                     <tr>
+                         <th>nome</th>
+                         <th>email</th>
+                         <th>iade</th>
+                     </tr>
+                </thead>   
+                
+                <tbody id="tableBodyList">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
